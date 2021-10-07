@@ -27,7 +27,7 @@ Yo yo yo, I've made a mock PIQ integration to get better visibilty on what merch
 
 Following the template, you can add more users in the mockUsers.json file located in the src directory. You can add any valid JSON in the users, but make sure PIQ would allow that info.
 
-**Mock PaymentIQ integration** © [Titus](https://github.com/TitusEntertainment).
-Authored by TitusEntertainment.
+**Mock PaymentIQ integration** [Eddie Englund](https://github.com/TitusEntertainment).
+Authored by Eddie Englund.
 
 > GitHub [@TitusEntertainment](https://github.com/TitusEntertainment)
