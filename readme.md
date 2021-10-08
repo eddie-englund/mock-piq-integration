@@ -4,6 +4,8 @@ Yo yo yo, I've made a mock PIQ integration to get better visibilty on what merch
 
 ### Prerequisites
 
+`Note that steps 1 and 2 can be skipped if you use docker`
+
 1. Install [NodeJs](https://nodejs.org/en/) and make sure it's working (simply write node --version in a console/terminal)
 2. Make sure NPM was also installed with node, so run `npm --version`. If it isn't installed, install it. Heres a [guide](https://blog.teamtreehouse.com/install-node-js-npm-mac)
 3. Install (ngrok)[https://ngrok.com/]
@@ -13,6 +15,22 @@ Yo yo yo, I've made a mock PIQ integration to get better visibilty on what merch
 7. Open the /src directory and the file `config.json`, paste in the HTTPS URL that ngrok gave by changing the current URL that's there
 8. Run `yarn start` in the mock-piq-integration directory -> This will then start the application
 9. Now go to your MID in PaymentIQ --> Admin --> Configuration --> MerchantConfig. Here you will need to change the `integrationService` value
+ to `standardMerchantIntegrationService` and add <apiIntegrationUrl>{YOUR_NGROK_HTTPS_URL_HERE}/api/{action}</apiIntegrationUrl>, example:
+
+```xml
+  <apiIntegrationUrl>https://0094-185-139-247-194.ngrok.io/api/{action}</apiIntegrationUrl>
+  <integrationService>standardMerchantIntegrationService</integrationService>
+```
+
+#### With docker
+
+With docker all you need to install is ngrok.
+
+1. Go into the mock-piq-integraiton directory `cd my/path/to/mock-piq-integration`
+2. Use ngrok to tunnel port 3000 -> `./ngrok http 3000` (note that you'll need to cd to the dir where ngrok was unzipped on mac)
+3. Open the /src directory and the file `config.json`, paste in the HTTPS URL that ngrok gave by changing the current URL that's there
+3. Run `docker compose up`
+4. Now go to your MID in PaymentIQ --> Admin --> Configuration --> MerchantConfig. Here you will need to change the `integrationService` value
  to `standardMerchantIntegrationService` and add <apiIntegrationUrl>{YOUR_NGROK_HTTPS_URL_HERE}/api/{action}</apiIntegrationUrl>, example:
 
 ```xml
