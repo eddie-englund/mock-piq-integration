@@ -44,6 +44,10 @@ With docker all you need to install is ngrok.
 
 Following the template, you can add more users in the mockUsers.json file located in the src directory. You can add any valid JSON in the users, but make sure PIQ would allow that info.
 
+### Important notes
+
+- Transfer is only accepted, but the user will NOT actually be updated. This was so that we don't need to have a DB and make the program lighter. It is possible with docker but it's unnececary complication and requires more horsepower and space which everyone might not have on their machines
+
 **Mock PaymentIQ integration** [Eddie Englund](https://github.com/TitusEntertainment).
 Authored by Eddie Englund.
 
