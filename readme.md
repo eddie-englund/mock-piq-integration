@@ -27,9 +27,9 @@ Yo yo yo, I've made a mock PIQ integration to get better visibilty on what merch
 With docker all you need to install is ngrok.
 
 1. Go into the mock-piq-integraiton directory `cd my/path/to/mock-piq-integration`
-2. Use ngrok to tunnel port 3000 -> `./ngrok http 3000` (note that you'll need to cd to the dir where ngrok was unzipped on mac)
+2. Use ngrok to tunnel port 3000 -> `./ngrok http 3000`. If you haven't already you can install it [here](https://ngrok.com/)
 3. Open the /src directory and the file `config.json`, paste in the HTTPS URL that ngrok gave by changing the current URL that's there
-3. Run `docker compose up`
+3. Run `docker compose up` if you haven't installed it already you can do that [here](https://www.docker.com/products/docker-desktop)
 4. Now go to your MID in PaymentIQ --> Admin --> Configuration --> MerchantConfig. Here you will need to change the `integrationService` value
  to `standardMerchantIntegrationService` and add <apiIntegrationUrl>{YOUR_NGROK_HTTPS_URL_HERE}/api/{action}</apiIntegrationUrl>, example:
 
