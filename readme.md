@@ -8,7 +8,7 @@ Yo yo yo, I've made a mock PIQ integration to get better visibilty on what merch
 
 1. Install [NodeJs](https://nodejs.org/en/) and make sure it's working (simply write node --version in a console/terminal)
 2. Make sure NPM was also installed with node, so run `npm --version`. If it isn't installed, install it. Heres a [guide](https://blog.teamtreehouse.com/install-node-js-npm-mac)
-3. Install (ngrok)[https://ngrok.com/]
+3. Install [ngrok](https://ngrok.com/)
 4. Cd into the "mock-piq-integration" directory. `cd my/path/to/mock-piq-integration`
 5. Run `npm install`
 6. Use ngrok to tunnel port 3000 -> `./ngrok http 3000` (note that you'll need to cd to the dir where ngrok was unzipped on mac)
