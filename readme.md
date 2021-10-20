@@ -48,7 +48,7 @@ You can no longer configure diffirent users and must change the existing user in
 
 - Transfer is only accepted, but the user will NOT actually be updated. This was so that we don't need to have a DB and make the program lighter. It is possible with docker but it's unnececary complication and requires more horsepower and space which everyone might not have on their machines
 
-- All answers (verifyUser, transfer, authorize, etc) are configurable in [responses.json]("./src/responses.json")
+- All answers (verifyUser, transfer, authorize, etc) are configurable in responses.json located in the src folder
 
 - Every time you change any of the reponses you must restart the application
 
