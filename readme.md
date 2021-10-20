@@ -13,7 +13,7 @@ Yo yo yo, I've made a mock PIQ integration to get better visibilty on what merch
 5. Run `npm install`
 6. Use ngrok to tunnel port 3000 -> `./ngrok http 3000` (note that you'll need to cd to the dir where ngrok was unzipped on mac)
 7. Open the /src directory and the file `config.json`, paste in the HTTPS URL that ngrok gave by changing the current URL that's there
-8. Run `yarn start` in the mock-piq-integration directory -> This will then start the application
+8. Run `npm run start` in the mock-piq-integration directory -> This will then start the application
 9. Now go to your MID in PaymentIQ --> Admin --> Configuration --> MerchantConfig. Here you will need to change the `integrationService` value
  to `standardMerchantIntegrationService` and add <apiIntegrationUrl>{YOUR_NGROK_HTTPS_URL_HERE}/api/{action}</apiIntegrationUrl>, example:
 
