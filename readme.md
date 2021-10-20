@@ -24,7 +24,7 @@ Yo yo yo, I've made a mock PIQ integration to get better visibilty on what merch
 
 #### With docker
 
-With docker all you need to install is ngrok.
+With docker all you need to install is ngrok and of course Docker.
 
 1. Go into the mock-piq-integraiton directory `cd my/path/to/mock-piq-integration`
 2. Use ngrok to tunnel port 3000 -> `./ngrok http 3000`. If you haven't already you can install it [here](https://ngrok.com/)
@@ -47,6 +47,10 @@ Following the template, you can add more users in the mockUsers.json file locate
 ### Important notes
 
 - Transfer is only accepted, but the user will NOT actually be updated. This was so that we don't need to have a DB and make the program lighter. It is possible with docker but it's unnececary complication and requires more horsepower and space which everyone might not have on their machines
+
+- All answers (verifyUser, transfer, authorize, etc) are configurable in [responses.json]("./src/responses.json")
+
+- Every time you change any of the reponses you must restart the application
 
 **Mock PaymentIQ integration** [Eddie Englund](https://github.com/TitusEntertainment).
 Authored by Eddie Englund.
