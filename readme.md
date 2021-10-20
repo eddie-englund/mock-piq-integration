@@ -42,7 +42,7 @@ With docker all you need to install is ngrok and of course Docker.
 
 ### Configuring diffirent users
 
-Following the template, you can add more users in the mockUsers.json file located in the src directory. You can add any valid JSON in the users, but make sure PIQ would allow that info.
+You can no longer configure diffirent users and must change the existing user in responses.json
 
 ### Important notes
 
