@@ -2,7 +2,7 @@
     "verifyUser": {
         "success": true,
         "userId": "1",
-        "usercat": "Jedi",
+        "userCat": "VIP;WEEB;",
         "firstName": "Hugo",
         "lastName": "Chavez",
         "dob": "1981-01-01",
@@ -53,6 +53,7 @@
     },
     "cancel": {
         "userId": "1",
-        "success": true
+        "success": true,
+        "errCode": "You suck, why can't you do a proper tx noob"
     }
 }
