@@ -55,5 +55,8 @@
         "userId": "1",
         "success": true,
         "errCode": "You suck, why can't you do a proper tx noob"
+    },
+    "notification": {
+        "success": true
     }
 }
